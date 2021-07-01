@@ -226,6 +226,10 @@ i.fa{
         padding: 2vh 0;
         width: 20px;
     }
+    #tabs{
+        margin: 10% 0;
+        align-items: baseline;
+    }
     .body{
         height: 60vh;
     }
