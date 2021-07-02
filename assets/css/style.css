@@ -93,6 +93,7 @@ nav img{
 }
 
 .body{
+    width: 60%;
     margin: 0 auto;
     position: absolute;
     display: flex;
@@ -154,6 +155,7 @@ nav img{
 .name span{
     color: red;
 }
+
 i.fa{
     font-size: 20px;
 }
@@ -172,7 +174,13 @@ i.fa{
     fill: white;
 }
 .insta:hover{
-    fill: rgba(190, 22, 22, 0.486);
+    fill: #E4405F;
+}
+.linkdn:hover{
+    fill: #0A66C2;
+}
+.tele:hover{
+    fill: #26A5E4;
 }
 
 .para{
@@ -200,6 +208,7 @@ i.fa{
 }
 /* about section */
 .about{
+    width: 60%;
     text-align: center;
     border-radius: 10px;
     padding: 7vh 6vh ;
@@ -212,6 +221,14 @@ i.fa{
 .about p{
     padding: 5vh 0 4vh 0;
 }
+.social{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20%;
+    top: 30%;
+}
+
 /* end main section */
 @media screen and (max-width: 768px){
     .header{
@@ -219,6 +236,10 @@ i.fa{
     }
     nav{
         width: 100%;
+    }
+    .para{
+        text-align: center;
+        max-width: 500px;
     }
     .logotext{
         font-size: 12px;
@@ -228,7 +249,7 @@ i.fa{
         width: 20px;
     }
     #tabs{
-        margin: 10% 0;
+        margin: 15% 0;
         align-items: baseline;
     }
     .body{
@@ -238,13 +259,25 @@ i.fa{
         max-width: 80%;
     }
     .logo_img img.cofe{
-        height: 120%;
+        height: 130%;
     }
     .body .name{
         padding: 10vh 0 4vh 0;
     }
+    .social{
+        right: 10px;
+        top: 20%;
+    }
 }
-
+@media screen and (max-width: 360px){
+    .para{
+        font-size: 15px;   
+    }
+    .logo_img img.cofe{
+        width: 90%;
+        margin-left: 10px;
+    }
+}
 @keyframes blink {
     from{
         opacity: 1;
